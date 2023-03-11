@@ -1,0 +1,22 @@
+---
+import HeaderLink from '../HeaderLink.astro';
+import { SITE_TITLE } from '../../consts';
+---
+
+<header>
+	<h2>
+		{SITE_TITLE}
+	</h2>
+	<nav>
+		<HeaderLink href="/Sillot">Home</HeaderLink>
+		<HeaderLink href="https://github.com/Hi-Windom/Sillot/releases">Github</HeaderLink>
+		<HeaderLink href="https://github.com/Hi-Windom/Sillot-android/releases" target="_blank">📱 Android application package</HeaderLink>
+		<HeaderLink href="https://hub.docker.com/r/soltus/sillot/tags?page=1&amp;ordering=last_updated" target="_blank">🚢 Docker image</HeaderLink>
+	</nav>
+  <p><img title="" src="https://img.shields.io/badge/Windows 10+-black?logo=Windows 11" /><img title="" src="https://img.shields.io/badge/macOS-black?logo=apple" /><img title="" src="https://img.shields.io/badge/Docker-black?logo=docker" /><img title="" src="https://img.shields.io/badge/Android 10+-black?logo=android" /></p>
+</header>
+<style>
+	header {
+		margin: 0em 0 2em;
+	}
+</style>
